@@ -10,16 +10,30 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var colorView: UIView!
+    @IBOutlet weak var sliderRed: UISlider!
+    @IBOutlet weak var sliderGreen: UISlider!
+    @IBOutlet weak var sliderBlue: UISlider!
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    @IBAction func mixColors() {
+        
+        let r: Float = self.sliderRed.value
+        let g: Float = self.sliderGreen.value
+        let b: Float = self.sliderBlue.value
+        
+        let cgr: CGFloat = CGFloat(r)
+        let cgg: CGFloat = CGFloat(g)
+        let cgb: CGFloat = CGFloat(b)
 
+        colorView.backgroundColor = UIColor(red: cgr, green: cgg, blue: cgb, alpha: 1)
+        
+    }
 
 }
 

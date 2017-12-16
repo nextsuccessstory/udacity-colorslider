@@ -3,7 +3,7 @@ An iOS app that has color sliders (red, green and blue) to create make new color
 
 ## Installation
 ``
-$ git clone https://github.com/nextsuccessstory/udacity-clickcounter.git
+$ git clone https://github.com/nextsuccessstory/udacity-colorslider.git
 ``
 
 ## License
